@@ -1,0 +1,1 @@
+include ':app', ':nendSDK-2.3.2', ':AndroidBootstrap', ':ormlite-core-4.48', ':ormlite-android-4.48', ':commons-lang3-3.3.2'

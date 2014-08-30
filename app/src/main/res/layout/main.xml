@@ -1,0 +1,165 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_corners"
+            android:gravity="center_horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="赤ちゃんの睡眠と授乳\nかんたん記録"
+                android:id="@+id/textView"
+                android:textSize="30sp"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="すぐに記録する"
+                android:id="@+id/textView2"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:id="@+id/ff">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/linearLayout2"
+                android:gravity="center_horizontal">
+                <!--<com.beardedhen.androidbootstrap.BootstrapButton-->
+                <Button
+                    android:id="@+id/sleep"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="寝た"
+                    android:textSize="25sp"
+                    android:background="@android:color/holo_blue_light" />
+                <!--bootstrapbutton:bb_type="success"-->
+                <!--bootstrapbutton:bb_icon_right="fa-clock-o"-->
+                <!--bootstrapbutton:bb_roundedCorners="true"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+                <!--<com.beardedhen.androidbootstrap.BootstrapButton-->
+                <Button
+                    android:id="@+id/wake"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="起きた"
+                    android:textSize="25sp"
+                    android:background="@android:color/holo_blue_light" />
+                <!--bootstrapbutton:bb_type="success"-->
+                <!--bootstrapbutton:bb_icon_right="fa-clock-o"-->
+                <!--bootstrapbutton:bb_roundedCorners="true"-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+            <!--<com.beardedhen.androidbootstrap.BootstrapButton-->
+            <Button
+                android:id="@+id/milk"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="授乳"
+                android:textSize="25sp"
+                android:background="@android:color/holo_blue_light" />
+            <!--bootstrapbutton:bb_type="danger"-->
+            <!--bootstrapbutton:bb_icon_right="fa-female"-->
+            <!--bootstrapbutton:bb_roundedCorners="true"-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="履歴を見る"
+                android:id="@+id/textView3"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:id="@+id/linearLayout3"
+            android:weightSum="1">
+            <Button
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="履歴を見る"
+                android:layout_weight="0.41"
+                android:textSize="25sp"
+                android:background="@android:color/holo_green_light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <net.nend.android.NendAdView
+            android:id="@+id/nend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            NendApiKey="1501ca1e1ea009ff5c6fc5afef5a85d17d6df936"
+            NendSpotId="223455"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
