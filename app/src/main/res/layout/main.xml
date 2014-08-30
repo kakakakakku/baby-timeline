@@ -2,9 +2,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
-    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto" >
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <LinearLayout
         android:orientation="vertical"
@@ -61,7 +59,6 @@
                 android:layout_weight="1"
                 android:id="@+id/linearLayout2"
                 android:gravity="center_horizontal">
-                <!--<com.beardedhen.androidbootstrap.BootstrapButton-->
                 <Button
                     android:id="@+id/sleep"
                     android:layout_width="150dp"
@@ -69,9 +66,6 @@
                     android:text="寝た"
                     android:textSize="25sp"
                     android:background="@android:color/holo_blue_light" />
-                <!--bootstrapbutton:bb_type="success"-->
-                <!--bootstrapbutton:bb_icon_right="fa-clock-o"-->
-                <!--bootstrapbutton:bb_roundedCorners="true"-->
             </LinearLayout>
 
             <LinearLayout
@@ -80,7 +74,6 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:gravity="center_horizontal">
-                <!--<com.beardedhen.androidbootstrap.BootstrapButton-->
                 <Button
                     android:id="@+id/wake"
                     android:layout_width="150dp"
@@ -88,9 +81,6 @@
                     android:text="起きた"
                     android:textSize="25sp"
                     android:background="@android:color/holo_blue_light" />
-                <!--bootstrapbutton:bb_type="success"-->
-                <!--bootstrapbutton:bb_icon_right="fa-clock-o"-->
-                <!--bootstrapbutton:bb_roundedCorners="true"-->
             </LinearLayout>
 
         </LinearLayout>
@@ -101,7 +91,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal">
-            <!--<com.beardedhen.androidbootstrap.BootstrapButton-->
             <Button
                 android:id="@+id/milk"
                 android:layout_width="150dp"
@@ -109,9 +98,6 @@
                 android:text="授乳"
                 android:textSize="25sp"
                 android:background="@android:color/holo_blue_light" />
-            <!--bootstrapbutton:bb_type="danger"-->
-            <!--bootstrapbutton:bb_icon_right="fa-female"-->
-            <!--bootstrapbutton:bb_roundedCorners="true"-->
         </LinearLayout>
 
         <LinearLayout
