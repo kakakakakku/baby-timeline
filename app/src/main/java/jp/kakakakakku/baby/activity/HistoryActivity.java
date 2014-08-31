@@ -35,7 +35,7 @@ public class HistoryActivity extends Activity {
         List<BabyHistoryEntity> histories;
         histories = model.findAll();
 
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:KK");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm");
 
         List<MyCustomListData> objects = new ArrayList<MyCustomListData>();
 
